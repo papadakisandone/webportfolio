@@ -38,7 +38,7 @@ const About = () => {
                     </div>
                     <p>
                         Hi, my name is Antonios Papadakis. A Web Developer - Programmer  passionate about creating interactive
-                        applications and experiences on web. My base is in beautiful Hamburg, seens i moved here in the last months.
+                        applications and experiences on web. My base is in beautiful Hamburg, since i moved here in the last months.
                         This is a portfolio of my personal work. 
                     </p>
                     <a href="#contact" className="btn btn-primary">Let's Talk</a> 
