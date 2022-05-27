@@ -1,0 +1,114 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* cta */
+.cta { 
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+/* Socials */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 8rem;
+}
+/* .header__socials::before{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+} */
+.header__social_line{
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+.logo{
+    display: flex;
+    width: 50px;
+}
+.container__logo{
+    width: fit-content;
+}
+/*container of photo */
+
+.me{
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 27rem;
+    position: absolute;
+    
+    /* the next two is to center the photo*/
+    left: 50%;  
+    transform: translateX(-50%);
+
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
+}
+/* Scroll Down */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 10rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+/* react icon in the watch */
+.header__react-icon{
+    position: absolute;
+    top: 273px;
+    left: 188px;
+    font-size: 1.1rem;
+    margin-top: 6px;
+    color: var(--color-react-watch);
+    z-index: 2;
+}
+/* animation react icon*/
+.header__react-animation {
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* ----------------------------------- */
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+/* Media Queries for Medium devices - Tablets */
+
+@media screen and (max-width:1024px) {
+    header {
+        height: 68vh;
+    }
+}
+/* Media Queries for Small devices - Mobiles */
+
+@media screen and (max-width:600px) {
+    header {
+        height: 100vh;
+    }
+    .header__socials, .scroll__down {
+        display: none;
+    }
+}
