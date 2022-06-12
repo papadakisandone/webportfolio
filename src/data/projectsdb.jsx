@@ -4,9 +4,17 @@ import memory from "../assets/projects/color-memory_resize.png";
 import drummer from "../assets/projects/drummer_resize.png";
 import mind from "../assets/projects/mind_resize.png";
 import todolist from "../assets/projects/todolist_resize.png";
-import projects from "../assets/projects/project.jpg";
+import chart from "../assets/projects/chart.jpg";
 
 const projectsdb = [
+  {
+    id: uniqid(),
+    image: `${chart}`,
+    title: "Real Time Data",
+    description: "",
+    github: "https://github.com/papadakisandone/chart-realtime",
+    demo: "https://papadakisandone.github.io/chart-realtime/",
+  },
   {
     id: uniqid(),
     image: `${memory}`,
