@@ -5,6 +5,7 @@ import drummer from "../assets/projects/drummer_resize.png";
 import mind from "../assets/projects/mind_resize.png";
 import todolist from "../assets/projects/todolist_resize.png";
 import chart from "../assets/projects/chart.png";
+import projects from "../assets/projects/project.jpg";
 
 const projectsdb = [
   {
